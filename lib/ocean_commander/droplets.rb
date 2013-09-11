@@ -1,8 +1,6 @@
 module OceanCommander
   class Droplets < General
-    default_task :list
-
-    desc "droplets", "list droplets"
+    desc "list", "list droplets"
     def list
       tp api.droplets.list.droplets
     end

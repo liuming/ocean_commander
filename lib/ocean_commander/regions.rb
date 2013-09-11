@@ -1,8 +1,6 @@
 module OceanCommander
   class Regions < General
-    default_task :list
-
-    desc "regions", "list regions"
+    desc "list", "list regions"
     def list
       tp api.regions.list.regions
     end
