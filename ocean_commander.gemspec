@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = OceanCommander::VERSION
   spec.authors       = ["Ming Liu"]
   spec.email         = ["liuming@lmws.net"]
-  spec.description   = %q{}
-  spec.summary       = %q{Command line tool to manage your Digital Ocean's resources}
-  spec.homepage      = ""
+  spec.description   = %q{Command line tool to manage your Digital Ocean's resources}
+  spec.summary       = spec.description
+  spec.homepage      = "https://github.com/liuming/ocean_commander"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
@@ -20,8 +20,8 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency "thor", ">= 0.18.1"
   spec.add_dependency "digital_ocean", ">= 1.2.0"
-  spec.add_dependency "table_print", ">= 1.3.3"
-  spec.add_development_dependency "bundler", "~> 1.3"
+  spec.add_dependency "table_print", ">= 1.4.0"
+  spec.add_development_dependency "bundler", "~> 1.3.5"
   spec.add_development_dependency "rake"
   spec.add_development_dependency "rspec", ">=2.14.1"
 end
