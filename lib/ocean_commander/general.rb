@@ -8,8 +8,8 @@ module OceanCommander
 
     def api
       DigitalOcean::API.new(
-        client_id: options[:client_id] || ENV['DO_CLIENT_ID'],
-        api_key: options[:api_key] || ENV['DO_API_KEY'],
+        client_id: options[:client_id] || ENV['DIGITAL_OCEAN_CLIENT_ID'],
+        api_key: options[:api_key] || ENV['DIGITAL_OCEAN_API_KEY'],
         debug: options[:debug] || false
       )
     end
