@@ -10,6 +10,7 @@ require_relative "ocean_commander/images"
 require_relative "ocean_commander/ssh_keys"
 require_relative "ocean_commander/sizes"
 require_relative "ocean_commander/domains"
+require_relative "ocean_commander/ssh"
 
 module OceanCommander
   class Ocean < General
@@ -30,5 +31,8 @@ module OceanCommander
 
     desc "domains", "manage domains"
     subcommand :domains, Domains
+
+    desc "ssh", "ssh to droplets"
+    subcommand :ssh, Ssh
   end
 end
